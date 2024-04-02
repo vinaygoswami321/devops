@@ -17,7 +17,7 @@ pipeline{
                 bat "mvn -B -DskipTests clean package"
             }
         }
-        state("run"){
+        stage("run"){
             steps{
                 bat"./mvnw spring-boot:run"
             }
