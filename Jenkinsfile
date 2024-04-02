@@ -7,17 +7,17 @@ pipeline{
     }
 
     stages{
-        stage("git"){
+        stage("Git"){
             steps{
                 git branch: 'main', credentialsId: 'c45fd740-cb8e-43d9-b5ef-7bdd0cf83021', url: 'https://github.com/vinaygoswami321/devops.git'
             }
         }
-        stage("build"){
+        stage("Build"){
             steps{
                 bat "mvn -B -DskipTests clean package"
             }
         }
-        stage("test"){
+        stage("Test"){
             steps{
                 bat "mvn test"
             }
