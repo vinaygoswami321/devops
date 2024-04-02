@@ -49,6 +49,7 @@ public class ProductServiceImpl implements ProductService {
         return CreateProductResDto.builder()
                 .code(202)
                 .message("Product saved successfully")
+                .product(productDto)
                 .build();
     }
 

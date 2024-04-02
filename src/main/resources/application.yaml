@@ -3,10 +3,10 @@ spring:
     name: devops-application
 
   datasource:
-    url: jdbc:mysql://localhost:3306/devops_db
+    url: ${DB_URL:jdbc:mysql://localhost:3306/devops_db}
     driver-class-name: com.mysql.cj.jdbc.Driver
-    username: root
-    password: root
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:root}
 
   jpa:
     hibernate:
