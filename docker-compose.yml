@@ -1,4 +1,4 @@
-version: "3.6"
+version: "3.7"
 
 services:
   mysql:
@@ -7,7 +7,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: devops_db
-      MYSQL_USER: root
+      MYSQL_USER: my-user
       MYSQL_PASSWORD: root
     networks:
       - my-network
