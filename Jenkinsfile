@@ -19,7 +19,7 @@ pipeline{
         }
         stage("run"){
             steps{
-                bat"./mvnw spring-boot:run"
+                bat"./mvnw -d spring-boot:run"
             }
         }
         stage("test"){
